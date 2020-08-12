@@ -9,13 +9,13 @@ WORKDIR /
 
 # Updating ubuntu and installing other necessary software
 RUN apt-get update --yes \
-&& apt-get install git vim --yes 
+&& apt-get install python python3-pip git vim --yes 
 
 # Clone BDCLearn repository, pip install requirements from the file,
 # 
 RUN git clone https://github.com/satusky/BDCLearn \
 && cd BDCLearn \
-&& pip install -r requirements.txt 
+&& pip3 install -r requirements.txt 
 
 # Set command to bash
 CMD ["/bin/bash"]
