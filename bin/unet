@@ -6,7 +6,8 @@ new() {
 }
 
 train () {
-	echo "Train"
+	echo "Training UNet from directory"
+	python ./utils/train.py $*
 }
 
 test() {
@@ -23,7 +24,7 @@ case $to_run in
 	
 	new) new ${@:2};;
 
-	train) train ;;
+	train) train ${@:2};;
 
 	test) test ;;
 
