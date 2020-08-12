@@ -1,0 +1,32 @@
+#!/bin/bash
+
+new() {
+	echo "Building UNet..."
+	python ./models/unet.py $*
+}
+
+train () {
+	echo "Train"
+}
+
+test() {
+	echo "Test"
+}
+
+predict() {
+	echo "Predict"
+}
+
+
+to_run=$1
+case $to_run in
+	
+	new) new ${@:2};;
+
+	train) train ;;
+
+	test) test ;;
+
+	predict) predict ;;
+
+esac
