@@ -9,7 +9,7 @@ WORKDIR /
 
 # Updating ubuntu and installing other necessary software
 RUN apt-get update --yes \
-&& apt-get install python python3-pip git vim --yes 
+&& apt-get install python3.8 python3-pip git vim --yes 
 
 # Clone BDCLearn repository, pip install requirements from the file,
 # 
