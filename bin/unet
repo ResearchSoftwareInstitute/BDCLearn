@@ -2,12 +2,12 @@
 
 new() {
 	echo "Building UNet..."
-	python ./models/unet.py $*
+	python3 ./models/unet.py $*
 }
 
 train () {
 	echo "Training UNet from directory"
-	python ./utils/train.py $*
+	python3 ./utils/train.py $*
 }
 
 test() {
