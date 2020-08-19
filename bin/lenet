@@ -1,12 +1,12 @@
 #!/bin/bash
 
 new() {
-	echo "Building UNet..."
-	python ./models/unet.py $*
+	echo "Building LeNet..."
+	python ./models/lenet.py $*
 }
 
 train () {
-	echo "Training UNet from directory"
+	echo "Training LeNet from directory"
 	python ./utils/train.py $*
 }
 

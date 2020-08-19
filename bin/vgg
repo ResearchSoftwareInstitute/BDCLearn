@@ -1,12 +1,12 @@
 #!/bin/bash
 
 new() {
-	echo "Building UNet..."
+	echo "Building VGG-${1}..."
 	python ./models/unet.py $*
 }
 
 train () {
-	echo "Training UNet from directory"
+	echo "Training VGG from directory"
 	python ./utils/train.py $*
 }
 
