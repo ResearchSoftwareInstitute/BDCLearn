@@ -8,13 +8,13 @@ Current : UNet\
 To Do: VGG-16, LeNet, Resnet, SegNet, ...
 
 ## Commands
-/bin/{network name} **new** {kwargs} : create a new hdf5 model file with the selected network structure\
-/bin/{network name} **train --model_path --image_path --class_path** {kwargs} : train a model from image directories (see https://keras.io/api/preprocessing/image/#flowfromdirectory-method)
+/keras/{network name} **new** {kwargs} : create a new hdf5 model file with the selected network structure\
+/keras/{network name} **train --model_path --image_path --class_path** {kwargs} : train a model from image directories (see https://keras.io/api/preprocessing/image/#flowfromdirectory-method)
 <br />
 <br />
 In progress:\
-/bin/{network name} **test --model_path --image_path --class_path** {kwargs} : test a trained model for image directories\
-/bin/{network name} **predict --model_path --image_path** : use a model to predict classes from an image directory
+/keras/{network name} **test --model_path --image_path --class_path** {kwargs} : test a trained model for image directories\
+/keras/{network name} **predict --model_path --image_path** : use a model to predict classes from an image directory
 <br />
 
 ## Using custom preprocessing scripts in Python
