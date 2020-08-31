@@ -1,5 +1,13 @@
 # BDCLearn - Dockerized Keras deep learning tools for BDCat
 
+## Jupyter Notebooks
+The included Jupyter notebooks are self-contained tools for training each network type. Each notebook contains preprocessing and training with an example dataset, but the intent is that the user can replace to preprocessing section with a custom script and data can be imported.
+
+## Pretrained models
+Models pretrained with example datasets are available
+UNet - trained with lung segmentation masks in the COVID-19 dataset from http://medicalsegmentation.com/covid19/
+LeNet - trained with the Fashion MNist set included in Keras
+
 ## Docker
 
 
