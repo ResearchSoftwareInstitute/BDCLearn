@@ -5,6 +5,7 @@ The included Jupyter notebooks are self-contained tools for training each networ
 
 ## Pretrained models
 Models pretrained with example datasets are available
+<br />
 UNet - trained with lung segmentation masks in the COVID-19 dataset from http://medicalsegmentation.com/covid19/
 <br />
 LeNet - trained with the Fashion MNist set included in Keras
